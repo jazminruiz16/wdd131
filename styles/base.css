@@ -71,13 +71,12 @@ main {
     grid-column: 1/4;
     display: grid;
     grid-template: 1fr/1fr 1fr 1fr;
+    min-width: 1100px;
 }
 
 .left {
     grid-column: 1/3;
     margin: 5px 10px 5px 15px;
-
-
 }
 
 .rigth {
@@ -86,11 +85,9 @@ main {
 }
 
 .card {
-
-
-    
     margin-top: 5px;
     border: 1px solid #6D3B47;
+    
 }
 
 .card h1 {
@@ -104,33 +101,43 @@ main {
 
 .card article {
     text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
     right: 0;
     left: 0;
-    height: 170px;
-    padding: 100px;
-    
+    padding: 5px;
+    justify-content: center;
+
 }
 
 .card article h2 {
     position: absolute;
     text-align: left;
     padding: 1%;
-    top: 85px;
+    top: 190px;
 
 }
 
 .card article p {
+
+    margin-right: 270px;
     position: absolute;
-    top: 120px;
-    margin-right: 50%;
 
 }
-
+#about{
+    margin-top: 20px;
+}
+#achica{
+    margin-top: 200px;
+}
 .images {
-    float: right;
+    float:right;
+    margin-top: 20px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 0 0 10px gray;
 }
 
 h1 {
@@ -152,25 +159,11 @@ main section {
     padding: 10px;
     width: auto;
     position: relative;
-}
-
-main section img {
-    border: 1px solid black;
-    padding: 2px;
-    justify-content: space-between;
-}
-
-main article {
-    justify-content: center;
-    
-}
-
-main article img {
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
 }
+
+
+
 
 /*.images2 {
     margin-left: 15%;
@@ -181,48 +174,13 @@ main article img {
 }*/
 
 p {
-    padding: 10px;
+    padding: 5px;
     text-align: left;
+    position: relative;
 }
 
-.history {
-    top: 2%;
-    margin-top: 10px;
-    background-color: var(--accent2-color);
-    color: var(--secondary-color);
-}
-
-.historybody {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 2%;
-}
-
-.historybody img {
-    width: 30%;
-}
-
-.figures {
-    display: flex;
-    justify-content: space-between;
-    margin: 5%;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-figure {
-    width: 20%;
-}
-
-.figures figure img {
-    width: 90%;
-}
-
-.figures figure figcaption {
-    width: 100%;
+ul{
+    margin-top: 20%;
 }
 
 footer {
