@@ -80,7 +80,7 @@ main {
 
 .left {
     grid-column: 1/3;
-    margin: 5px 10px 5px 15px;
+    margin: 2% 2% 1% 4%;
 }
 
 .rigth {
@@ -125,19 +125,28 @@ main {
 
 .card article p {
 
-    margin-right: 270px;
     position: absolute;
 
 }
 #about{
     margin-top: 20px;
+    margin-right: 220px;
 }
 #achica{
     margin-top: 200px;
+    margin-left: 200px;
 }
 .images {
     float:right;
     margin-top: 20px;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    box-shadow: 0 0 10px gray;
+}
+.images2{
+    position: absolute;
+    margin-top: 200px;
     height: auto;
     border: 1px solid black;
     padding: 5px;
