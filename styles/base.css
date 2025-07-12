@@ -15,7 +15,7 @@ body {
    /* font-weight: 400;*/
     display: grid;
     height: 100vh;
-    grid-template: 200px 1fr 120px/ 1fr 1fr 1fr;
+    grid-template: 200px 450px 120px/ 1fr 1fr 1fr;
 }
 
 header {
@@ -119,7 +119,7 @@ main {
     position: absolute;
     text-align: left;
     padding: 1%;
-    top: 190px;
+    top: 210px;
 
 }
 
@@ -133,7 +133,7 @@ main {
     margin-right: 220px;
 }
 #achica{
-    margin-top: 200px;
+    margin-top: 240px;
     margin-left: 200px;
 }
 .images {
@@ -146,7 +146,7 @@ main {
 }
 .images2{
     position: absolute;
-    margin-top: 200px;
+    margin-top: 240px;
     height: auto;
     border: 1px solid black;
     padding: 5px;
