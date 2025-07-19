@@ -17,7 +17,7 @@ body {
     height: 100vh;
     grid-template: 200px 470px 120px/ 1fr 1fr 1fr;
 
-
+}
 header {
     padding: 10px;
     grid-column: 1 / 4;
