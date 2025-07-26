@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive images</title>
+        <meta name="description" content=" description of page usig keywords">
+        <meta name="author" content="Jazmin Ruiz">
+        <link rel="stylesheet" href="styles/responsive-images.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Responsive images</h1>
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/bogota-colombia1500.webp" media="(min-width: 1000px)">
+                    <source srcset="images/bogota-colombia1000.webp" media="(min-width: 550px)">
+                    <img src="images/bogota-colombia.webp" alt="Bogota Temple" width="500" height="297">
+                </picture>
+            </div>
+
+        </main>
+       
+    </body>
+</html>
