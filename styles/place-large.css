@@ -44,7 +44,8 @@
         color: var(--secondary-color);
     }
 
-    p {
+    .data p,
+    .weather p {
         color: var(--secondary-color);
     }
 
