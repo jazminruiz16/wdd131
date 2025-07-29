@@ -53,8 +53,8 @@
         display: none;
     }
 
-    #emoticon {
-        display: inline;
+    #emoticon::after {
+        content: " ⛅";
     }
 
 
