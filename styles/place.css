@@ -34,6 +34,7 @@ main {
 }
 
 h1 {
+    font-family: Lato, sans-serif;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-align: center;
@@ -43,7 +44,7 @@ h1 {
 .data,
 .weather {
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
     margin-left: 5%;
     background-color: var(--secondary-color);
