@@ -45,7 +45,7 @@ header {
     display: block;
 }
 
-header nav a {
+header nav button {
     padding: 5px;
     width: 150px;
     text-align: center;
@@ -55,11 +55,16 @@ header nav a {
 
 }
 
-header nav a:hover {
+header nav button:hover {
     color: blue;
 }
+
 #page-title {
     font-size: 2rem;
+}
+
+.titlePhoto {
+    font-size: 1.5rem;
 }
 
 h1 {

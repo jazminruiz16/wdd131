@@ -8,6 +8,7 @@ document.getElementById("lastModified").textContent = date;
 
 const button = document.getElementById('menu-button');
 const menu = document.getElementById('menu');
+const listPhotos = document.getElementById('photos');
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -65,17 +66,109 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    {
+        templeName: "Montevideo Uruguay",
+        location: "Montevideo, Uruguay",
+        dedicated: "2001, March, 18",
+        area: 10700,
+        imageUrl:
+            "https://churchofjesuschrist.org/imgs/b3415f6d30c8ab6e832b65fa5893b68d148a161b/full/800%2C/0/default"
+
+    },
+    {
+        templeName: "Nashville Tennessee",
+        location: "Tennessee, United States",
+        dedicated: "2000, May, 21",
+        area: 10700,
+        imageUrl:
+            "https://www.churchofjesuschrist.org/imgs/f9bac287489148744e0ba060673e261e061d3361/full/1600%2C/0/default"
+    },
+    {
+        templeName: "Okinawa Japan",
+        location: " Okinawa, Japan",
+        dedicated: "2023, November, 12",
+        area: 12437,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/okinawa-japan-temple/okinawa-japan-temple-9974-thumb.jpg"
+
+    },
+    // Add more temple objects here... 
 ];
 
 button.addEventListener("click", function () {
     menu.classList.toggle('open');
-    console.log(menu); 
-    if (button.innerHTML ==='☰') {
+    console.log(menu);
+    if (button.innerHTML === '☰') {
         button.textContent = '❌';
     }
     else {
         button.textContent = '☰';
     }
 
+});
+const oldLink = document.getElementById('old');
+const newLink = document.getElementById('new');
+const largeLink = document.getElementById('large');
+const smallLink = document.getElementById('small');
+const homeLink = document.getElementById('home');
+oldLink.addEventListener("click", function () {
+    let old = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year < 2000;
+    });
+    listPhotos.innerHTML = '';
+    old.forEach(temple => {
+        const listItem = document.createElement("figure");
+        listItem.innerHTML = '<figcaption><span class="titlePhoto">' + temple.templeName + '</span><br>LOCATION: ' + temple.location + '<br>DEDICATED: ' + temple.dedicated + '<br>SIZE: ' + temple.area + ' sq ft</figcaption><img src="' + temple.imageUrl + '" alt="' + temple.templeName + '" loading="lazy">';
+        listPhotos.appendChild(listItem);
+    });
+});
+newLink.addEventListener("click", function () {
+    let newest = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year >= 2000;
+    });
+    listPhotos.innerHTML = '';
+    newest.forEach(temple => {
+        const listItem = document.createElement("figure");
+        listItem.innerHTML = '<figcaption><span class="titlePhoto">' + temple.templeName + '</span><br>LOCATION: ' + temple.location + '<br>DEDICATED: ' + temple.dedicated + '<br>SIZE: ' + temple.area + ' sq ft</figcaption><img src="' + temple.imageUrl + '" alt="' + temple.templeName + '" loading="lazy">';
+        listPhotos.appendChild(listItem);
+    });
+});
+largeLink.addEventListener("click", function () {
+    let large = temples.filter(temple => {
+        const area = temple.area;
+        return area >= 90000;
+    });
+    listPhotos.innerHTML = '';
+    large.forEach(temple => {
+        const listItem = document.createElement("figure");
+        listItem.innerHTML = '<figcaption><span class="titlePhoto">' + temple.templeName + '</span><br>LOCATION: ' + temple.location + '<br>DEDICATED: ' + temple.dedicated + '<br>SIZE: ' + temple.area + ' sq ft</figcaption><img src="' + temple.imageUrl + '" alt="' + temple.templeName + '" loading="lazy">';
+        listPhotos.appendChild(listItem);
+    });
+});
+smallLink.addEventListener("click", function () {
+    let small = temples.filter(temple => {
+        const area = temple.area;
+        return area <= 10000;
+    });
+    listPhotos.innerHTML = '';
+    small.forEach(temple => {
+        const listItem = document.createElement("figure");
+        listItem.innerHTML = '<figcaption><span class="titlePhoto">' + temple.templeName + '</span><br>LOCATION: ' + temple.location + '<br>DEDICATED: ' + temple.dedicated + '<br>SIZE: ' + temple.area + ' sq ft</figcaption><img src="' + temple.imageUrl + '" alt="' + temple.templeName + '" loading="lazy">';
+        listPhotos.appendChild(listItem);
+    });
+});
+homeLink.addEventListener("click", function () {
+    listPhotos.innerHTML = '';
+    temples.forEach(temple => {
+        const listItem = document.createElement("figure");
+        listItem.innerHTML = '<figcaption><span class="titlePhoto">' + temple.templeName + '</span><br>LOCATION: ' + temple.location + '<br>DEDICATED: ' + temple.dedicated + '<br>SIZE: ' + temple.area + ' sq ft</figcaption><img src="' + temple.imageUrl + '" alt="' + temple.templeName + '" loading="lazy">';
+        listPhotos.appendChild(listItem);
+    });
+});
+const figureTemple = temples.map((temple) => {
+    const listItem = document.createElement("figure");
+    listItem.innerHTML = '<figcaption><span class="titlePhoto">' + temple.templeName + '</span><br>LOCATION: ' + temple.location + '<br>DEDICATED: ' + temple.dedicated + '<br>SIZE: ' + temple.area + ' sq ft</figcaption><img src="' + temple.imageUrl + '" alt="' + temple.templeName + '" loading="lazy">';
+    listPhotos.appendChild(listItem);
 });
