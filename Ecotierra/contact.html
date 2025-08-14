@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | EcoHortalizas Bolivia</title>
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="EcoHortalizas" />
+            <h1>EcoHortalizas Bolivia</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="productos.html">Products</a>
+            <a href="contacto.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Contact</h2>
+            <p>Address: Green Street #123, Agricultural Zone, Cochabamba</p>
+            <p>WhatsApp: +591 76543210</p>
+            <p>Email: contact@ecohortalizas.bo</p>
+            <iframe src="https://www.google.com/maps/embed?..." loading="lazy"></iframe>
+        </section>
+
+        <section class="formulario">
+            <h2>Send us a message</h2>
+            <form id="contactoForm">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="correo">Email:</label>
+                <input type="email" id="correo" name="correo" required />
+
+                <label for="motivo">Reason:</label>
+                <select id="motivo" name="motivo">
+                    <option value="consulta">General Inquiry</option>
+                    <option value="compra">Purchase</option>
+                    <option value="otro">Other</option>
+                </select>
+
+                <label for="mensaje">Message:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <label><input type="checkbox" id="boletin" name="boletin"> I want to receive the monthly
+                    newsletter</label>
+
+                <button type="submit">Send</button>
+            </form>
+            <p id="mensajeContacto"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EcoHortalizas Bolivia</p>
+        <div class="redes">
+            <a href="#"><img src="images/facebook.png" alt="Facebook" width="40"></a>
+            <a href="#"><img src="images/whatsapp.png" alt="WhatsApp" width="40"></a>
+        </div>
+    </footer>
+
+    <script src="scripts/ecotierra.js"></script>
+</body>
+
+</html>
