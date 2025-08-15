@@ -1,3 +1,28 @@
+console.dir(document);
+const form = document.getElementById('newsletterForm'); 
+const myList=[];
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('useremail').value;
+    const message = document.getElementById('newsletterMessage');
+    if (!name || !email) {
+        document.getElementById("newsletterMessage").textContent = "Please fill in all required fields.";
+        
+    }
+    else {
+        message.textContent = "Your request was sent successfully.";
+        const newItem = {
+            name: name, email: email
+        };
+        myList.push(newItem);
+        form.reset();
+    }  
+});
+/*const button = document.getElementById('submitButton');
+const menu = document.getElementById('menu');
+const listPhotos = document.getElementById('photos');
+
 document.addEventListener("DOMContentLoaded", () => {
     const contacto = document.getElementById("contactoForm");
     const newsletter = document.getElementById("newsletterForm");
@@ -34,4 +59,4 @@ document.addEventListener("DOMContentLoaded", () => {
             newsletter.reset();
         });
     }
-});
+});*/
