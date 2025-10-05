@@ -45,10 +45,3 @@ products.forEach(product => {
     selectproduct.appendChild(listItem);
 });
 
-let countstring = document.getElementById('count');
-let count = parseInt(countstring);
-submitbutton.addEventListener("click", function () {
-    const newcount = count + 1;
-    countstring.textContent = '';
-    countstring.textContent = newcount;
-});
