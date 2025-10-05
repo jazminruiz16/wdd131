@@ -1,40 +1,54 @@
 const form = document.querySelector("#form");
 const filledform = document.getElementById('filledform');
-const params = new URLSearchParams(window.location.search);
-const fname = params.get('fname');
-const lname = params.get('lname');
-const title = params.get('title');
-const email = params.get('email');
-const phone = params.get('phone');
-const business = params.get('business');
-const membership = params.get('membership');
-const bdescription = params.get('bdescription');
-const timestamp = params.get('timestamp');
+/*const params = new URLSearchParams(window.location.search);
+const name = params.get('name');*/
 
-const listData = document.createElement("div");
-listData.innerHTML = '<p>First name: ' + fname + '</p><p>Last name: ' + lname + '</p><p>Email: ' + email + '</p><p>Mobile number: ' + phone + '</p><p>Business name: ' + business + '</p><p>Current date timestamp: ' + timestamp + '</p>';
-filledform.appendChild(listData);
-listData.classList.add("centerbox");
 
-const button = document.getElementById('menu-button');
+const submitbutton = document.getElementById('button');
 const menu = document.getElementById('menu');
 const header = document.querySelector('header');
-const listPhotos = document.getElementById('listPhotos');
 
 
-button.addEventListener("click", function () {
-    menu.classList.toggle('open');
-    if (button.innerHTML === '☰') {
-        button.textContent = '❌';
-        header.style.height = '300px';
-
+const selectproduct = document.getElementById('selectproduct');
+const products = [
+    {
+        id: "fc-1888",
+        name: "flux capacitor",
+        averagerating: 4.5
+    },
+    {
+        id: "fc-2050",
+        name: "power laces",
+        averagerating: 4.7
+    },
+    {
+        id: "fs-1987",
+        name: "time circuits",
+        averagerating: 3.5
+    },
+    {
+        id: "ac-2000",
+        name: "low voltage reactor",
+        averagerating: 3.9
+    },
+    {
+        id: "jj-1969",
+        name: "warp equalizer",
+        averagerating: 5.0
     }
-    else {
-        button.textContent = '☰';
-        header.style.height = '150px';
+];
 
-    }
-
+products.forEach(product => {
+    const listItem = document.createElement("option");
+    listItem.setAttribute('value',product.id)
+    listItem.textContent =  product.name;
+    selectproduct.appendChild(listItem);
 });
 
-
+let countstring = document.getElementById('count');
+let count = parseInt(countstring);
+submitbutton.addEventListener("click", function () {
+    const newcount = count + 1;
+    countstring.textContent = '';
+    countstring.textContent = newcount;
+});
