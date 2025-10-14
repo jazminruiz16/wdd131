@@ -19,6 +19,8 @@ body {
     font-weight: lighter;
     /*display: flex;
     flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
 
 
 }
@@ -75,21 +77,6 @@ a:hover {
     background-color: var(--accent4-color);
 }
 
-.hero {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    opacity: 70%;
-}
-
-.hero-text {
-    position: absolute;
-    z-index: 2;
-    text-align: left;
-    color: var(--primary-color);
-    padding-left: 10px;
-
-}
 
 #page-title {
     font-size: 1rem;
@@ -150,56 +137,7 @@ footer p {
 
 
 
-.gridclass {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 
-.listclass {
-
-    font-size: 12px;
-    font-weight: lighter;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 10px;
-
-}
-
-.listclass div {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-    border-top: 1px solid #7ea8be;
-    height: 30px;
-}
-
-
-.gridclass section,
-aside,
-.strengths div {
-
-    border-right: 3px groove #EDE9E8;
-    border-bottom: 3px groove #EDE9E8;
-    border-left: 1px solid #EDE9E8;
-    border-top: 1px solid #EDE9E8;
-    padding: 20px;
-    margin: 5px;
-    width: 300px;
-}
-
-.gridclass figure {
-    background-color: var(--accent2-color);
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-size: 18px;
-    
-}
-.gridclass figure span{
-    font-size: 25px;
-    
-}
 footer {
     font-family: 'Lato', sans-serif;
     width: 100%;
@@ -230,40 +168,6 @@ footer span {
 }
 /*site Plan*/
 
-/*HOME PAGE*/
-.card3 {
-    text-align: center;
-    align-content: center;
-}
-
-.card3 div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    /*horizontalmente*/
-}
-
-.card2 {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-}
-
-.card2 h2 {
-    width: 100%;
-}
-
-
-
-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 20px;
-    text-align: center;
-}
 
 .dark1 {
     background-color: var(--secondary-color);
@@ -302,28 +206,13 @@ aside {
 
 }
 
-/*HOME PAGE*/
-#form{
-    display: flex;
-    flex-direction: column;
-}
-#form label{
-    display: flex;
-    flex-direction: column;
-    
-}
-.card3 img {
-    width: 90%;
-}
-.message{ 
+
+.message{
     width: 60%;
     height: 250px;
     margin-left: 20%;
     text-align: center;
 }
 .message h1, .message h2 {
-    padding: 20px; /*NEW*/
+    padding: 20px;
 }
-.strengths p{
-    font-family: 'Source Code Pro', monospace;
-}/*NEW*/
