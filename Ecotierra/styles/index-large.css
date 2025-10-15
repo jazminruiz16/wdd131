@@ -189,6 +189,20 @@
         margin-left: 35%;
         width: 30%;
     }
+
+    /*CONTACT PAGE*/
+    .card2 div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .card2 iframe {
+        width: 500px;
+        margin-left: 20px;
+    }
     
 
 
