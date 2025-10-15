@@ -18,6 +18,7 @@
 
 </head>
 
+
 <body>
     <header>
         <img src="images/logo.png" alt="my icon" id="jazminruiz">
@@ -27,62 +28,22 @@
             <a id="home" href="index.html" >Home</a>
             <a id="about" href="index.html">About Us</a>
             <a id="products" href="productslist.html">Products</a>
-            <a id="contact">Contact Us</a>
+            <a id="contact" href="contact.html">Contact Us</a>
         </nav>
         <button id="menu-button">☰</button>
     </header>
-
     <main class="index">
         <h1 class="hero-text">Organic Shop Bolivia<br>Home Page</h1>
         <img src="images/heroimage2.jpg" alt="Organic Shop Bolivia" class="hero">
-        <div class="gridclass homegrid">
-           
-            <section class="card1 dark1">
-                <h2>Contact</h2>
-                <div class="strengths">
-                    <div>
-                        <p>Address: Achica Baja community, Viacha</p>
-                        <p>La Paz - Bolivia </p>
-                        <p>WhatsApp: +591 76543210</p>
-                        <p>Email: contact@ecohortalizas.bo</p>
-                    </div>
-                    <div>
-                        <h3>Organic food:</h3>
-                        <p>"I love the taste of my dishes made with organic ingredients. And my children eat healthier."</p>
-            
-                    </div>
-                    <div>
-                        <h3>Cosmetics and aromatherapy:</h3>
-                        <p>"After a hard day, I like a relaxing massage with essential oils."</p>
-            
-                    </div>
-                </div>
-            </section>
-            
-            <section class="card2 light1">
-                <h2>Contact</h2>
-                <div>
-                    <p>Address: Achica Baja community, Viacha<br>La Paz - Bolivia<br>WhatsApp: +591 76543210<br>Email:
-                        contact@ecohortalizas.bo</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d4358.932973405834!2d-68.26203501577386!3d-16.69904620647727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-16.697709961634388!2d-68.26342397119856!5e0!3m2!1ses-419!2sbo!4v1760469382953!5m2!1ses-419!2sbo"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-                    </iframe>
-                </div> 
-            </section>
-            <aside class="light2" id="weather"></aside>
-            <section class="card3 dark1">
-                <h2>The Difference Of The Best Of Nature.</h2>
-                <div>
-                    <p>Take care of yourself and the planet with our sustainable options.</p>
-                    <a href="directory.html">Know More</a>
-                </div>
-            
-            </section>
-            
+        <div class="menu">
+            <button id="vegetables">Vegetables</button>
+            <button id="care">Personal Care</button>
         </div>
-
+        <div id="listPhotos" class="gridclass directorygrid"></div>
+    
     </main>
+
+   
     <footer>
         <div>
             <span> Organic Shop Bolivia</span>
@@ -117,8 +78,8 @@
         </div>
 
     </footer>
-    <script src="scripts/index.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    
+    <script src="scripts/products.js" defer></script>
 </body>
 
 </html>

@@ -327,3 +327,12 @@ aside {
 .strengths p{
     font-family: 'Source Code Pro', monospace;
 }/*NEW*/
+
+/*Contact Page*/
+.card2 div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
