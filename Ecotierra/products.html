@@ -2,74 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products | EcoHortalizas Bolivia</title>
-    <meta name="description" content="Jazmin's Ecotierra Company's Product Page">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Shop Bolivia</title>
+    <meta name="description" content="Home Page Organic Shop Bolivia">
     <meta name="author" content="Jazmin Ruiz">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Source+Code+Pro&display=swap"
         rel="stylesheet">
+
+
 </head>
+
 
 <body>
     <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="EcoHortalizas" />
-            <h1>EcoHortalizas Bolivia</h1>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
+        <img src="images/logo.png" alt="my icon" id="jazminruiz">
+        <span id="page-title">Organic Shop Bolivia</span>
+
+        <nav id="menu">
+            <a id="home" href="index.html" >Home</a>
+            <a id="about" href="about.html">About Us</a>
+            <a id="products" href="products.html">Products</a>
+            <a id="contact" href="contact.html">Contact Us</a>
         </nav>
+        <button id="menu-button">☰</button>
     </header>
-    <main>
-        <section class="products">
-            <h2>Our Organic Products</h2>
-            <div class="product-list">
-                <div class="product">
-                    <img src="images/lettuce.jpg" alt="Organic lettuce" />
-                    <h3>Lettuce</h3>
-                    <p>Fresh and crispy, grown without chemicals.</p>
-                </div>
-                <div class="product">
-                    <img src="images/tomatoes.jpg" alt="Organic tomatoes" />
-                    <h3>Tomatoes</h3>
-                    <p>Delicious and full of flavor, ideal for your salads and sauces.</p>
-                </div>
-                <div class="product">
-                    <img src="images/carrots.jpg" alt="Organic carrots" />
-                    <h3>Carrots</h3>
-                    <p>Rich in vitamins, perfect for snacking or cooking.</p>
-                </div>
-                <div class="product">
-                    <img src="images/spinach.jpg" alt="Organic spinach" />
-                    <h3>Spinach</h3>
-                    <p>Nutritious and versatile for healthy meals.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>©2025 Bolivia Rafting, Jazmin Ruiz</p>
-        <nav>
-            <a href="#">
-                <img src="images/face.png" alt="Bolivia Rafting" width="50">
-            </a>
-            <a href="https://wa.me/+5917121684">
-                <img src="images/whatsapp.png" alt="Bolivia Rafting" width="50">
-            </a>
-            <a href="https://wa.me/+59171286648">
-                <img src="images/whatsapp.png" alt="Bolivia Rafting" width="50">
-            </a>
+    <main class="index">
+        <h1 class="hero-text">Organic Shop Bolivia<br>Home Page</h1>
+        <img src="images/heroimage2.jpg" alt="Organic Shop Bolivia" class="hero">
+        <div class="menu">
+            <button id="vegetables" class="linkBox">Vegetables</button>
+            <button id="care" class="linkBox">Personal Care</button>
+        </div>
+        <div id="listPhotos" class="gridclass directorygrid"></div>
     
+    </main>
+
+   
+    <footer>
+        <div>
+            <span> Organic Shop Bolivia</span>
+            <p>
+                1392 Av. Mariscal Sta. Cruz Avenue<br>
+                La Paz, Bolivia<br>
+                https://www.cnc.bo/<br>
+                +591 2 2378606
+            </p>
+        </div>
+        <nav class="social-media">
+            <a href="https://www.youtube.com/user/CamaradeComercioBO">
+                <img src="images/youtube.svg" alt="jazminruiz16" width="50">
+            </a>
+            <a href="https://www.instagram.com/reel/DIwXFyFhOI-/">
+                <img src="images/twitter.svg" alt="Bolivia Rafting" width="50">
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-ruiz-aab80817b">
+                <img src="images/linkedin.svg" alt="linkedin" width="50">
+            </a>
+            <a href="https://www.linkedin.com/in/jazmin-ruiz-aab80817b">
+                <img src="images/x-twitter.svg" alt="x-twitter" width="40">
+            </a>
         </nav>
+        <div>
+            <p>
+                WDD131 Class Project<br>
+                Jazmin Ruiz<br>
+                © <span id="currentyear"></span> Organic Shop Bolivia<br>
+                Last modification: <span id="lastModified"></span>
+            </p>
+        </div>
+
     </footer>
+    
+    <script src="scripts/products.js" defer></script>
 </body>
 
 </html>
