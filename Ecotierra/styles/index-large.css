@@ -209,16 +209,22 @@
         margin: 20px;
     }
     .aboutcard1 div {
-        display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        
         padding: 20px;
         width: 90%;
+        
     }
-    .aboutcard1 div a img{
-        width: 400px;
+
+    .aboutcard1 div a {
+        min-width: 40%;
     }
+    .aboutcard1 div a img {
+        min-width: 300px;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
     .aboutcard2{
         width: 100%;
     }
