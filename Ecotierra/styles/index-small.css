@@ -327,7 +327,9 @@ aside {
 .strengths p{
     font-family: 'Source Code Pro', monospace;
 }/*NEW*/
-
+#button{
+    margin-left: 0px;
+}
 /*Contact Page*/
 .card2 div{
     display: flex;
