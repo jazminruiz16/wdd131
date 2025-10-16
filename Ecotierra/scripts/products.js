@@ -137,17 +137,7 @@ const products = [
     // Add more product objects here... 
 ];
 
-button.addEventListener("click", function () {
-    menu.classList.toggle('open');
-    console.log(menu);
-    if (button.innerHTML === '☰') {
-        button.textContent = '❌';
-    }
-    else {
-        button.textContent = '☰';
-    }
 
-});
 const vegetablesLink = document.getElementById('vegetables');
 const careLink = document.getElementById('care');
 const productLink = document.getElementById('products');

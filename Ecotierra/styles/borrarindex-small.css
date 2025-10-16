@@ -312,34 +312,89 @@ aside {
     flex-direction: column;
     
 }
+#button{
+    margin-left: 0px;
+    margin-top: 10px;
+}
 .card3 img {
     width: 90%;
 }
-.message{ 
-    width: 60%;
-    height: 250px;
-    margin-left: 20%;
-    text-align: center;
+
+
+
+.message h1,
+.message h2 {
+    padding: 20px;
+    /*NEW*/
 }
-.message h1, .message h2 {
-    padding: 20px; /*NEW*/
-}
-.strengths p{
+
+.strengths p {
     font-family: 'Source Code Pro', monospace;
-}/*NEW*/
+}
+
+/*NEW*/
+.animationbox{
+    position: relative;
+}
+
+@keyframes grow {
+    from {
+        width: 5px;
+        margin-right: 110px;
+        margin-bottom: -25px;
+    }
+
+    to {
+        width: 50px;
+        margin-right: 110px;
+        margin-bottom: 5px;
+    }
+}
+
+#calling {
+    width: 5px;
+    position: absolute;
+    
+    margin-right: 110px;
+    margin-bottom: -25px;
+    animation-name: grow;
+    animation-duration: 7s;
+    animation-iteration-count: 7;
+    animation-delay: 5s;
+}
 
 /*Contact Page*/
-.card2 div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.card2 div {
+    
     padding: 20px;
 }
-.card2 iframe {
+.card2 div a img{
     width: 220px;
+    margin-top: 30px;
 }
 /*PRODUCT PAGE*/
+.modalbox div h2 {
+    width: 80%;
+    text-align: left;
+}
+:modal {
+    margin: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    
+}
+.modalbox div{
+    text-align: center;
+}
+#closeModal1{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 2px;
+}
+
 .directorygrid>figure {
 
     border-right: 3px groove #EDE9E8;
@@ -370,17 +425,19 @@ aside {
 
 }
 
-.directorygrid figcaption span{
+.directorygrid figcaption span {
     font-family: Lato, sans-serif;
 }
+
 .directorygrid figcaption {
-    font-family: 'Source Code Pro' , monospace;
+    font-family: 'Source Code Pro', monospace;
     font-size: 15px;
 }
-.linkBox{
-    width: 120px;
+
+.linkBox {
+    width: 140px;
     height: 50px;
-    margin-left: 70px;
+    margin-left: 55px;
     background-color: var(--accent2-color);
     color: var(--primary-color);
     text-align: center;
@@ -391,7 +448,10 @@ aside {
     border-top: 1px solid #EDE9E8;
     text-decoration: none;
 }
-#vegetables{
+.bigfont{
+    font-size: 20px;
+}
+#vegetables {
     margin-left: 0px;
 }
 /*ABOUT PAGE*/
@@ -401,15 +461,12 @@ aside {
     justify-content: space-around;
     align-items: center;
 }
-
-.about {
+.about{
     font-size: 17px;
     padding: 5px;
     margin: 2px;
 }
-
-.aboutcard1,
-.aboutcard2 {
+.aboutcard1, .aboutcard2 {
     padding: 30px;
     width: 80%;
     margin-top: 30px;
@@ -419,7 +476,6 @@ aside {
 .aboutcard1 h2 {
     width: 100%;
 }
-
 .aboutcard1 div {
 
     display: flex;
@@ -433,16 +489,13 @@ aside {
     width: 95%;
     margin-top: 30px;
 }
-
-.aboutcard2 div div {
+.aboutcard2 div div{
     margin-left: 20%;
     width: 60%;
 }
-
-.aboutcard2 h2 {
+.aboutcard2 h2{
     text-align: center;
 }
-
-.aboutcard2 h3 {
+.aboutcard2 h3{
     margin-bottom: 10px;
 }
